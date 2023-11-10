@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
-    <?php require '../user/util.php' ?>
+    <?php require 'util.php' ?>
     <?php require 'bbdd_Amazon.php' ?>
 </head>
 <body>
@@ -14,6 +14,7 @@
         $temp_precio = depurar($_POST["precio"]);
         $temp_descripcion = depurar($_POST["descripcion"]);
         $temp_cantidad = depurar($_POST["cantidad"]);
+        
 
         //imagen
         $nombre_fichero = $_FILES["imagen"]["name"];
